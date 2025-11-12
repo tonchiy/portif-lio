@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Davi Cesco da Silva Tonchi</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonte opcional -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* Efeito simples de fade-in (substitui Framer Motion) */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(24px);
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-[#f5e6c8] flex items-center justify-center p-6 font-sans relative">
+    <div
+      class="fade-in w-full max-w-3xl bg-white shadow-lg rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8"
+    >
+      <!-- Foto -->
+      <div class="flex-shrink-0">
+        <div
+          class="w-40 h-40 md:w-56 md:h-56 rounded-xl overflow-hidden shadow-inner border border-gray-100"
+        >
+          <img
+            alt="Foto de Davi Cesco da Silva Tonchi"
+            src="https://i.pinimg.com/736x/18/a9/07/18a90792205b49b61f289c798f6c7d46.jpg"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Informações -->
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-2xl md:text-3xl font-bold leading-tight text-gray-800">
+          Davi Cesco da Silva Tonchi
+        </h1>
+        <p class="mt-2 text-sm md:text-base text-gray-600">
+          Portfólio pessoal — apresentação
+        </p>
+
+        <div class="mt-6">
+          <h2 class="text-sm font-medium text-gray-700">Interesses</h2>
+          <div class="mt-3 flex flex-wrap gap-3">
+            <span class="px-3 py-1 rounded-full bg-gray-100 text-sm">Artes</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100 text-sm">Biologia Genética</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100 text-sm">Jogos</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100 text-sm">Fotografia</span>
+            <span class="px-3 py-1 rounded-full bg-gray-100 text-sm">Música</span>
+          </div>
+        </div>
+
+        <div class="mt-6 text-sm text-gray-600">
+          <p>
+            Me chamo Davi e estou atualmente no segundo ano do ensino médio no
+            colégio Benedita Rosa Rezende.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div
+      class="absolute bottom-6 text-xs text-gray-500 font-sans text-center w-full"
+    >
+      Personalize a foto e os interesses conforme desejar.
+    </div>
+  </body>
+</html>
